@@ -29,13 +29,13 @@ export const Paragraph = styled.p`
 `
 
 export const BtnStart = styled.button`
-    background: gold;
+    background: #FFD700;
     width: 15vw;
-    height: 25vh;
     margin-top:15vh;
-    border: 0;
+    font-size:3vh;
+    border: none;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 700;
 `
 
 export const BottomTitle = styled.h2`
@@ -69,6 +69,10 @@ export const BoxGif = styled.div`
     background-color: rgb(34, 37, 75);
     height: 55vh;
 `
+export const ImageGif = styled.img`
+    width:26vw;
+    height:46vh;
+`
 
 export const ImageMain = styled.img`
     width: 26vw;
@@ -94,7 +98,7 @@ export const BoxImgMain = styled.div`
     align-items: center;
 `
 export const TitleImgMain = styled.h2`
-    width: 30vw;
+    width: 40vw;
     font-size:8vh;
     color: rgb(34, 37, 75);
 `
@@ -102,6 +106,7 @@ export const TitleImgMain = styled.h2`
 export const ParagraphImgMain = styled.p`
     color: rgb(34, 37, 75);
     font-weight:light;
+    width:30vw;
     font-size:3.5vh;
 `
 
@@ -139,7 +144,7 @@ export const WrapperMain = styled.div`
     align-items: center;
 `
 
-export const LinksMenu = styled.div`
+export const MenuMain = styled.div`
     width: 75vw;
     height: 17vh;
     border-radius: 8px;
@@ -163,9 +168,9 @@ export const Item = styled.div`
     align-items: center;
     justify-content: center;
     &:hover{
-        font-weight: 600;
+        font-weight: 700;
         background-color: #FFCE06;
-        border-radius: 5px;
+        border-radius: 15px;
         cursor: pointer;
     }
 `
@@ -232,8 +237,6 @@ export const BoxUsers = styled.div`
     
     
 `
-
-
 export const TitleUsers = styled.h2`
     color:#fff;
     font-size:9vh;
@@ -261,15 +264,21 @@ export const BoxImgUsers = styled.figure`
 
 export const BoxMainFinal = styled.div`
     display: flex;
+    background-color:rgb(236, 231, 247);
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-weight:200;
     height:75vh;
+    border-bottom:solid 0.5px #DCDCDC;
 `
 export const BtnMainFinal = styled.button`
     background: #FFD700;
     width: 11vw;
     height:8vh;
+    font-size:2vh;
+    font-weight:700;
     border:none;
     cursor:pointer;
+
 `

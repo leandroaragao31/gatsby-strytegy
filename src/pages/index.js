@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import { Header } from '../Header/index'
 import { Main } from '../Main/index'
 import * as S from '../Components/GlobalStyles'
+import { Footer } from "../Footer/index"
 
 
 export const query = graphql`
@@ -24,22 +25,38 @@ query{
       itemmenu2
       itemmenu3
       itemmenu4
+      titleMain
+      paragraphMain
+      titleMainBottom
+      paragraphMainBottom
+      titleSecurity
+      itemSecurityList
+      itemSecurityList2
+      itemSecurityList3
+      titleUsers
+      paragraphUsers
+      lastMainTitle
+      lastMainParagraph
+      btnStartNow
       image {
         url
-        id
       }
       backimg {
         url
-        id
       }
-      gifimg {
+      imageGif {
         url
-        id
       }
       imgmain {
-        id
         url
       }
+      imageSecurity{
+        url
+      }
+      profileImg{
+        url
+      }
+
     }
   }
 }
@@ -70,7 +87,7 @@ export default function index({ data }) {
         backimg={dataMain.backimg.url}
         bottomtitle={dataMain.divtitle}
         bottomparagraph={dataMain.divparagraph}
-        imagemain={dataMain.gifimg.url}
+        gifImage={dataMain.imageGif.url}
         titlegif={dataMain.titleGif}
         paragraphgif={dataMain.paragraphgif}
         imgmain={dataMain.imgmain.url}
@@ -78,12 +95,25 @@ export default function index({ data }) {
         item2={dataMain.itemmenu2}
         item3={dataMain.itemmenu3}
         item4={dataMain.itemmenu4}
-
+        titleimgmain={dataMain.titleMain}
+        paragraphimgmain={dataMain.paragraphMain}
+        titleOrganization={dataMain.titleMainBottom}
+        paragraphOrganization={dataMain.paragraphMainBottom}
+        safeTitle={dataMain.titleSecurity}
+        imageSafe={dataMain.imageSecurity.url}
+        itemSafe1={dataMain.itemSecurityList}
+        itemSafe2={dataMain.itemSecurityList2}
+        itemSafe3={dataMain.itemSecurityList3}
+        userTitle={dataMain.titleUsers}
+        paragraphUser={dataMain.paragraphUsers}
+        imageUser={dataMain.profileImg.url}
+        lastTitle={dataMain.lastMainTitle}
+        lastParagraph={dataMain.lastMainParagraph}
+        btnlastStart={dataMain.btnStartNow}
       />
-      
+      <Footer />
     </div>
   );
 }
 
 
-//background: url(${props => props.backgroundImg})

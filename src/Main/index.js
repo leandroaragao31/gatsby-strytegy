@@ -73,7 +73,7 @@ export function Main({
             </S.MenuMain>
             <S.BoxGif>
                 <figure>
-                    <S.ImageGif src={gifImage} alt="gif" />
+                    <S.ImageGif src="https://www.strytegy.com/static/feature-meeting-9cf50dd5f3776a598ae12991f992de91.gif" alt="gif" />
                 </figure>
                 <div>
                     <S.TitleGif>{titlegif}</S.TitleGif>

@@ -31,11 +31,11 @@ export const Paragraph = styled.p`
 export const BtnStart = styled.button`
     background: #FFD700;
     width: 15vw;
-    margin-top:15vh;
+    margin-top:8vh;
     font-size:3vh;
     border: none;
     cursor: pointer;
-    font-weight: 700;
+    font-weight: 500;
 `
 
 export const BottomTitle = styled.h2`
@@ -67,10 +67,10 @@ export const BoxGif = styled.div`
     justify-content: space-around;
     align-items: center;
     background-color: rgb(34, 37, 75);
-    height: 55vh;
+    height: 75vh;
 `
 export const ImageGif = styled.img`
-    width:26vw;
+    width:36vw;
     height:46vh;
 `
 

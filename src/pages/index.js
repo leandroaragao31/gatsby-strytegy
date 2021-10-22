@@ -44,9 +44,6 @@ query{
       backimg {
         url
       }
-      imageGif {
-        url
-      }
       imgmain {
         url
       }
@@ -87,7 +84,6 @@ export default function index({ data }) {
         backimg={dataMain.backimg.url}
         bottomtitle={dataMain.divtitle}
         bottomparagraph={dataMain.divparagraph}
-        gifImage={dataMain.imageGif.url}
         titlegif={dataMain.titleGif}
         paragraphgif={dataMain.paragraphgif}
         imgmain={dataMain.imgmain.url}
